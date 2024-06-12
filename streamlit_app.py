@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # Load the trained model
-model = joblib.load('stacking_model.pkl')
+model = joblib.load('best_stacking_model.pkl')
 scaler = joblib.load('scaler.pkl')
 
 # Title of the app
