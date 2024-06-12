@@ -2,14 +2,14 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-# Load the trained model
+
 model = joblib.load('final_stacking_model.pkl')
 scaler = joblib.load('scaler.pkl')
 
-# Title of the app
+
 st.title('⚽ Player Rating Prediction ⚽')
 
-# Sidebar for user input
+
 st.sidebar.header('Enter Player Attributes 🏅')
 
 def user_input_features():
@@ -40,21 +40,20 @@ def user_input_features():
 
 input_df = user_input_features()
 
-# Display user input
+
 st.subheader('User Input Parameters ⚙️')
 st.write(input_df)
 
-# Ensure the input features match the training data
+
 try:
-    # Scale the input data
     input_df_scaled = scaler.transform(input_df)
 
-    # Predict and display result
+    
     prediction = model.predict(input_df_scaled)
     st.subheader('Prediction 📊')
     st.write(f'🏅 Predicted Rating: {prediction[0]}')
 except Exception as e:
     st.error(f"Error in prediction: {e}")
 
-# Add an animation or image
-st.sidebar.image("https://www.example.com/football.gif", caption='Football Animation', use_column_width=True)
+
+st.sidebar.image("https://th.bing.com/th/id/R.6da89904177277ea98383eceff14c2db?rik=oQDCtY3dhnuOAQ&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2f120Zj5Kb5ugtRS%2fgiphy.gif&ehk=PEsT1M919HpBjlmpsYppaR1DhXp5aE%2b8NPwQHMIqXa8%3d&risl=&pid=ImgRaw&r=0", caption='Football Animation', use_column_width=True)
