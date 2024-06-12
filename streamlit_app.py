@@ -13,16 +13,16 @@ st.title('⚽ Player Rating Prediction ⚽')
 st.sidebar.header('Enter Player Attributes 🏅')
 
 def user_input_features():
-    attribute_1 = st.sidebar.slider('Potential', 0.0, 100.0, 50.0)
-    attribute_2 = st.sidebar.slider('Value in Euros', 9000.0, 185500000.0, 92750000.0, step=1000000.0)
-    attribute_3 = st.sidebar.slider('Wage in Euros', 500.0, 560000.0, 280000.0, step=10000.0)
-    attribute_4 = st.sidebar.slider('Shot Power', 0.0, 100.0, 50.0)
-    attribute_5 = st.sidebar.slider('Short Passing', 0.0, 100.0, 50.0)
-    attribute_6 = st.sidebar.slider('Passing', 0.0, 100.0, 50.0)
-    attribute_7 = st.sidebar.slider('Dribbling', 0.0, 100.0, 50.0)
-    attribute_8 = st.sidebar.slider('Reactions', 0.0, 100.0, 50.0)
-    attribute_9 = st.sidebar.slider('Composure', 0.0, 100.0, 50.0)
-    attribute_10 = st.sidebar.slider('Vision', 0.0, 100.0, 50.0)
+    attribute_1 = st.sidebar.slider('Potential 🌟', 0.0, 100.0, 50.0)
+    attribute_2 = st.sidebar.slider('Value in Euros 💶', 9000.0, 185500000.0, 92750000.0, step=1000000.0)
+    attribute_3 = st.sidebar.slider('Wage in Euros 💰', 500.0, 560000.0, 280000.0, step=10000.0)
+    attribute_4 = st.sidebar.slider('Shot Power 🔥', 0.0, 100.0, 50.0)
+    attribute_5 = st.sidebar.slider('Short Passing 🎯', 0.0, 100.0, 50.0)
+    attribute_6 = st.sidebar.slider('Passing 🅿️', 0.0, 100.0, 50.0)
+    attribute_7 = st.sidebar.slider('Dribbling 🕺', 0.0, 100.0, 50.0)
+    attribute_8 = st.sidebar.slider('Reactions ⚡', 0.0, 100.0, 50.0)
+    attribute_9 = st.sidebar.slider('Composure 😌', 0.0, 100.0, 50.0)
+    attribute_10 = st.sidebar.slider('Vision 👀', 0.0, 100.0, 50.0)
 
     data = {'movement_reactions': attribute_8,
             'mentality_composure': attribute_9,
