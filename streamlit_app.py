@@ -16,9 +16,9 @@ st.sidebar.header('Enter Player Attributes')
 
 def user_input_features():
     attribute_1 = st.sidebar.number_input('Potential', min_value=0.0, max_value=100.0, value=50.0)
-    attribute_2 = st.sidebar.number_input('Value in Euros', min_value=9000.0, max_value=1855000.0, value=92750)
+    attribute_2 = st.sidebar.number_input('Value in Euros', min_value=9000.0, max_value=185500000.0, value=92750000.0)
     attribute_3 = st.sidebar.number_input('Wage in Euros', min_value=500.0,
-                                          max_value=560000.0, value=280000)
+                                          max_value=560000.0, value=280000.0)
     attribute_4 = st.sidebar.number_input('Shot Power', min_value=00.0, max_value=100.0, value=50.0)
     attribute_5 = st.sidebar.number_input('Short Passing', min_value=00.0, max_value=100.0, value=50.0)
     attribute_6 = st.sidebar.number_input('Passing', min_value=00.0, max_value=100.0, value=50.0)
