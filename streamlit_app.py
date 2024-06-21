@@ -18,11 +18,14 @@ def user_input_features():
     attribute_3 = st.sidebar.slider('Wage in Euros 💰', 500.0, 560000.0, 280000.0, step=10000.0)
     attribute_4 = st.sidebar.slider('Shot Power 🔥', 0.0, 100.0, 50.0)
     attribute_5 = st.sidebar.slider('Short Passing 🎯', 0.0, 100.0, 50.0)
+    attribute_12 = st.sidebar.slider('Long Passing 🎌', 0.0, 100.0, 50.0)
     attribute_6 = st.sidebar.slider('Passing 🅿️', 0.0, 100.0, 50.0)
     attribute_7 = st.sidebar.slider('Dribbling 🕺', 0.0, 100.0, 50.0)
     attribute_8 = st.sidebar.slider('Reactions ⚡', 0.0, 100.0, 50.0)
     attribute_9 = st.sidebar.slider('Composure 😌', 0.0, 100.0, 50.0)
     attribute_10 = st.sidebar.slider('Vision 👀', 0.0, 100.0, 50.0)
+    attribute_11 = st.sidebar.slider('International Reputation 🎌', 0.0, 100.0, 50.0)
+
 
     data = {'movement_reactions': attribute_8,
             'mentality_composure': attribute_9,
@@ -33,7 +36,9 @@ def user_input_features():
             'power_shot_power': attribute_4,
             'value_eur': attribute_2,
             'mentality_vision': attribute_10,
-            'attacking_short_passing': attribute_5
+            'attacking_short_passing': attribute_5,
+            'international_reputation': attribute_11,
+            'skill_long_passing': attribute_12
             }
     features = pd.DataFrame(data, index=[0])
     return features
