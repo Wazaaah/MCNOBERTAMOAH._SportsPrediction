@@ -17,7 +17,6 @@ def user_input_features():
     attribute_2 = st.sidebar.slider('Value in Euros 💶', 9000.0, 185500000.0, 92750000.0, step=1000000.0)
     attribute_3 = st.sidebar.slider('Wage in Euros 💰', 500.0, 560000.0, 280000.0, step=10000.0)
     attribute_4 = st.sidebar.slider('Shot Power 🔥', 0.0, 100.0, 50.0)
-    attribute_5 = st.sidebar.slider('Short Passing 🎯', 0.0, 100.0, 50.0)
     attribute_12 = st.sidebar.slider('Long Passing 🎌', 0.0, 100.0, 50.0)
     attribute_6 = st.sidebar.slider('Passing 🅿️', 0.0, 100.0, 50.0)
     attribute_7 = st.sidebar.slider('Dribbling 🕺', 0.0, 100.0, 50.0)
@@ -36,7 +35,6 @@ def user_input_features():
             'power_shot_power': attribute_4,
             'value_eur': attribute_2,
             'mentality_vision': attribute_10,
-            'attacking_short_passing': attribute_5,
             'international_reputation': attribute_11,
             'skill_long_passing': attribute_12
             }
