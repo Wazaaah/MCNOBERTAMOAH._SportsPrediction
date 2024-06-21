@@ -27,14 +27,14 @@ def user_input_features():
 
 
     data = {'movement_reactions': attribute_8,
-            'mentality_composure': attribute_9,
-            'passing': attribute_6,
             'potential': attribute_1,
-            'dribbling': attribute_7,
+            'passing': attribute_6,
             'wage_eur': attribute_3,
+            'mentality_composure': attribute_9,
             'value_eur': attribute_2,
-            'mentality_vision': attribute_10,
+            'dribbling': attribute_7,
             'attacking_short_passing': attribute_5,
+            'mentality_vision': attribute_10,
             'international_reputation': attribute_11,
             'skill_long_passing': attribute_12
             }
