@@ -82,7 +82,6 @@ try:
     # Display the prediction
     st.subheader('Prediction 📊')
     st.write(f'🏅 Predicted Rating: {prediction[0]}')
-    st.write('Accuracy Score: 97%')
 except Exception as e:
     st.error(f"Error in prediction: {e}")
 
