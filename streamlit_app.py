@@ -9,7 +9,7 @@ scaler = joblib.load('scaler.pkl')
 # Set the title of the Streamlit app
 st.title('⚽ Player Rating Prediction ⚽')
 
-# Sidebar for user input
+# Create a Sidebar for user input
 st.sidebar.header('Enter Player Attributes 🏅')
 
 
