@@ -12,43 +12,6 @@ st.title('⚽ Player Rating Prediction ⚽')
 # Sidebar for user input
 st.sidebar.header('Enter Player Attributes 🏅')
 
-# Add background image
-st.markdown(
-    """
-    <style>
-    body {
-        background: url('https://media.giphy.com/media/l0HlObIKcJDA8aHWM/giphy.gif');
-        background-size: cover;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# Add a button to play the UCL anthem
-if st.sidebar.button('Play UCL Anthem'):
-    st.markdown(
-        """
-        <audio controls autoplay>
-            <source src="https://www.fesliyanstudios.com/musicfiles/2019-09-05_-_Epic_Boss_Battle_-_David_Fesliyan.mp3" type="audio/mpeg">
-        </audio>
-        """,
-        unsafe_allow_html=True
-    )
-
-# Customize header and footer colors
-st.markdown(
-    """
-    <style>
-    header, footer {
-        background-color: #4CAF50;
-        color: white;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 def user_input_features():
     attribute_1 = st.sidebar.slider('Potential 🌟', 0.0, 100.0, 50.0)
     attribute_2 = st.sidebar.slider('Value in Euros 💶', 9000.0, 185500000.0, 92750000.0, step=1000000.0)
