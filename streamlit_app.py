@@ -12,6 +12,42 @@ st.title('⚽ Player Rating Prediction ⚽')
 # Sidebar for user input
 st.sidebar.header('Enter Player Attributes 🏅')
 
+
+st.markdown(
+    """
+    <style>
+    body {
+        background: url('https://media.giphy.com/media/l0HlObIKcJDA8aHWM/giphy.gif');
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Add music
+st.markdown(
+    """
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+    </audio>
+    """,
+    unsafe_allow_html=True
+)
+
+# Customize header and footer colors
+st.markdown(
+    """
+    <style>
+    header, footer {
+        background-color: #4CAF50;
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 def user_input_features():
     attribute_1 = st.sidebar.slider('Potential 🌟', 0.0, 100.0, 50.0)
     attribute_2 = st.sidebar.slider('Value in Euros 💶', 9000.0, 185500000.0, 92750000.0, step=1000000.0)
