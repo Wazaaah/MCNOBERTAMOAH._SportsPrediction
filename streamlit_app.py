@@ -1,3 +1,18 @@
+import streamlit as st
+import joblib
+import pandas as pd
+
+# Load the trained model
+model = joblib.load('stacking_model.pkl')
+scaler = joblib.load('scaler.pkl')
+
+# Title of the app
+st.title('⚽ Player Rating Prediction ⚽')
+
+# Sidebar for user input
+st.sidebar.header('Enter Player Attributes 🏅')
+
+
 st.markdown(
     """
     <style>
