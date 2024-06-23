@@ -9,7 +9,7 @@ scaler = joblib.load('scaler.pkl')
 # Set the title of the Streamlit app
 st.title('⚽ Player Rating Prediction ⚽')
 
-# Create a Sidebar for user input
+# Sidebar for user input
 st.sidebar.header('Enter Player Attributes 🏅')
 
 
@@ -27,14 +27,9 @@ def user_input_features():
     attribute_10 = st.sidebar.slider('International Reputation 🌍', 0.0, 5.0, 3.0)
     attribute_11 = st.sidebar.slider('Long Passing 🎌', 0.0, 100.0, 50.0)
     attribute_12 = st.sidebar.slider('Shot Power 💥', 0.0, 100.0, 50.0)
-    attribute_13 = st.sidebar.slider('Physic 💪', 0.0, 100.0, 50.0)
-    attribute_14 = st.sidebar.slider('Age 🎂', 15, 45, 30)
-    attribute_15 = st.sidebar.slider('Ball Control 🏀', 0.0, 100.0, 50.0)
     attribute_16 = st.sidebar.slider('Left Defensive Midfielder (LDM) 🛡️', 0.0, 100.0, 50.0)
     attribute_17 = st.sidebar.slider('Right Defensive Midfielder (RDM) 🛡️', 0.0, 100.0, 50.0)
     attribute_18 = st.sidebar.slider('Central Defensive Midfielder (CDM) 🛡️', 0.0, 100.0, 50.0)
-    attribute_19 = st.sidebar.slider('Right Midfielder (RM) 🎽', 0.0, 100.0, 50.0)
-    attribute_20 = st.sidebar.slider('Left Wing Back (LWB) 🏃‍♂️', 0.0, 100.0, 50.0)
 
     # Create a dictionary to store the input data
     data = {
@@ -53,11 +48,6 @@ def user_input_features():
         'rdm': attribute_17,
         'cdm': attribute_18,
         'power_shot_power': attribute_12,
-        'rm': attribute_19,
-        'physic': attribute_13,
-        'age': attribute_14,
-        'skill_ball_control': attribute_15,
-        'lwb': attribute_20
     }
 
     # Convert the dictionary to a DataFrame
