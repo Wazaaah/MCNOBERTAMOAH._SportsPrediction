@@ -25,15 +25,16 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Add music
-st.markdown(
-    """
-    <audio autoplay loop>
-        <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
-    </audio>
-    """,
-    unsafe_allow_html=True
-)
+# Add a button to play music
+if st.sidebar.button('Play Music'):
+    st.markdown(
+        """
+        <audio controls autoplay loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+        </audio>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Customize header and footer colors
 st.markdown(
